@@ -4,41 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-<style>
-h1{
-  
-  font-family: Georgia, sans-serif;
-  font-size: 5em;
-  letter-spacing: -2px;
-
-}
-
-body {
-  background-image: url('images/bg_drummer.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  
-  
-    }
- div.background {
-  
-  margin: 70px;
-  margin-top:60px;
-  margin-left:60px;
-  margin-right:60px;
-  background-color:	black;
-  opacity: 0.75;
-}
-img{
-cursor: url('cursor.cur') , auto;
-}
-
-
-  </style>
 
 <body>
   <center>
@@ -59,34 +26,8 @@ cursor: url('cursor.cur') , auto;
     </div>
   </center>
   
+<script src="myscript.js"></script>
 
-  <script type="text/javascript">
-    function instrumentClick(instr) {
-      switch (instr) {
-        case "crash":
-          var crash = new Audio("sounds/crash.mp3");
-          crash.play();
-          break;
-        case "kick":
-          var kick = new Audio("sounds/kick.mp3");
-          kick.play();
-          break;
-        case "snare":
-          var snare = new Audio("sounds/snare.mp3");
-          snare.play();
-          break;
-
-        case "tom":
-          var tom1 = new Audio("sounds/tom.mp3");
-          tom1.play();
-          break;
-      }
-    }
-
-  </script>
-<br>
-<br>
-<br>
 
 </body>
 </html>
