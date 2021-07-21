@@ -13,28 +13,41 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-opacity: 0.7;
+  
+  
     }
- 
+ div.background {
+  
+  margin: 70px;
+  margin-top:60px;
+  margin-left:60px;
+  margin-right:60px;
+  background-color:	black;
+  opacity: 0.75;
+}
+img{
+cursor:url(''); 
+}
+
 
   </style>
 
 <body>
   <center>
-    <h1 style="color:white;"> Drum-set</h1>
+    <h1 style="color:white;"> Drum-Kit</h1>
     
     
-    <div class="">
-      <img src="images/Crash_1.png" style="width: 250px; cursor: url('./images/Stick1.gif'), auto; "
-        onclick="instrumentClick('crash')" />
-      <img src="images/Tom_2.png" style="width: 210px;cursor: url('./images/Stick1.gif'), auto;"
+    <div class="background">
+      <img src="images/Crash_1.png" style="width: 250px;"
+        onclick="instrumentClick('crash')"  />
+      <img src="images/Tom_2.png" style="width: 210px;"
         onclick="instrumentClick('tom')" />
-      <img src="images/kick3.png" style="width: 200px;cursor: url('./images/Stick1.gif'), auto;"
+      <img src="images/kick3.png" style="width: 200px;"
         onclick="instrumentClick('kick')" />
-      <img src="images/snare.png" style="cursor: url('./images/Stick1.gif'), auto;"
+      <img src="images/snare.png" style="width: 200px;"
         onclick="instrumentClick('snare')" />
-      <img src="images/crash.png" style="cursor: url('./images/Stick1.gif'), auto;"
-        onclick="instrumentClick('crash')" />
+      <img src="images/crash.png" style="width: 200px;"
+      onclick="instrumentClick('crash')"  />
     </div>
   </center>
   
