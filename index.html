@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+</head>
+
+
+<style>
+body {
+  background-image: url('images/bg_drummer.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-opacity: 0.7;
+    }
+ 
+
+  </style>
+
+<body>
+  <center>
+    <h1 style="color:white;"> Drum-set</h1>
+    
+    
+    <div class="">
+      <img src="images/Crash_1.png" style="width: 250px; cursor: url('./images/Stick1.gif'), auto; "
+        onclick="instrumentClick('crash')" />
+      <img src="images/Tom_2.png" style="width: 210px;cursor: url('./images/Stick1.gif'), auto;"
+        onclick="instrumentClick('tom')" />
+      <img src="images/kick3.png" style="width: 200px;cursor: url('./images/Stick1.gif'), auto;"
+        onclick="instrumentClick('kick')" />
+      <img src="images/snare.png" style="cursor: url('./images/Stick1.gif'), auto;"
+        onclick="instrumentClick('snare')" />
+      <img src="images/crash.png" style="cursor: url('./images/Stick1.gif'), auto;"
+        onclick="instrumentClick('crash')" />
+    </div>
+  </center>
+  
+
+  <script type="text/javascript">
+    function instrumentClick(instr) {
+      switch (instr) {
+        case "crash":
+          var crash = new Audio("sounds/crash.mp3");
+          crash.play();
+          break;
+        case "kick":
+          var kick = new Audio("sounds/kick.mp3");
+          kick.play();
+          break;
+        case "snare":
+          var snare = new Audio("sounds/snare.mp3");
+          snare.play();
+          break;
+
+        case "tom":
+          var tom1 = new Audio("sounds/tom.mp3");
+          tom1.play();
+          break;
+      }
+    }
+
+  </script>
+<br>
+<br>
+<br>
+
+</body>
+</html>
